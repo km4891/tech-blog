@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Some Tech Blog</title>
+
+    {{!-- style sheets go here  --}}
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+    
+</body>
+
+    <div>
+        {{!-- header which will contain log in and log out as well as main page header  --}}
+        <header>
+            <h1><a href="/">Some Tech Blog</a></h1>
+
+            <nav>
+                <button id="logout">logout</button>
+
+                <a href="/login">login</a>
+            </nav>
+        </header>
+
+        <main>
+            {{{body}}}
+        </main>
+
+        <footer>
+            Ya'll come back now.
+        </footer>
+
+    </div>
+
+    {{!-- script files will go here  --}}
+    <script src="/javascript/logout.js"></script>
+
+</html>
