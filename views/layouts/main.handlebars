@@ -14,14 +14,17 @@
 </body>
 
     <div>
-        {{!-- header which will contain log in and log out as well as main page header  --}}
         <header>
             <h1><a href="/">Tech Blog</a></h1>
 
             <nav>
+                {{#if loggedIn}}
                 <button id="logout">logout</button>
 
+                <a href="/dashboard">dashboard</a>
+                {{else}}
                 <a href="/login">login</a>
+                {{/if}}
             </nav>
         </header>
 
